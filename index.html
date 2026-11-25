@@ -57,6 +57,8 @@
     margin: 36px 0 8px;
   }
   p { margin: 0 0 14px; }
+  ul { margin: -6px 0 14px; padding-left: 22px; }
+  li { margin: 0 0 4px; }
   a { color: var(--accent); text-underline-offset: 3px; }
   footer {
     margin-top: 48px;
@@ -77,30 +79,47 @@
   <h1>Memory Vault Privacy Policy</h1>
   <p class="meta">Effective November 25, 2026 · Developer whyjf</p>
 
-  <p class="summary">Memory Vault is a private journal for memories and dreams, made by whyjf. In short, everything you write stays on your phone, and I never see it.</p>
+  <p class="summary">Memory Vault is a private, offline journal for memories and dreams, made by whyjf. Everything you write stays on your phone. The app has no internet access, and I never see your entries.</p>
 
   <h2>What Memory Vault stores</h2>
-  <p>Memory Vault saves the memories, dreams and settings you enter in the app's private storage on your device. That is the only place they are kept. The app has no internet access, so it cannot send your entries anywhere.</p>
+  <p>Memory Vault stores your memories, threads and dreams, an optional photo for each memory, and your settings. All of it lives in the app's private storage on your phone, which other apps can't read. Each save also keeps one backup copy in that same private storage, so a crash can't wipe your vault.</p>
 
-  <h2>What I collect and share</h2>
-  <p>Nothing. Memory Vault does not collect, transmit, sell or share any personal data or usage data. There is no account or sign-in, no ads, no analytics, no tracking and no crash reporting service. I have no server and no way to see what you write.</p>
+  <h2>No internet, no account, no ads</h2>
+  <p>Memory Vault does not have the internet permission, so it cannot send anything anywhere on its own. There is no account or sign-in, no ads, no analytics, no tracking and no third-party crash reporting. I have no server and no way to see what you write.</p>
 
   <h2>Permissions</h2>
-  <p>Memory Vault does not request internet access. It does not ask for access to your location, contacts, camera, microphone, photos or files.</p>
+  <p>Memory Vault asks for one Android permission, Vibrate, for a small buzz when you touch things. It also declares a permission that an Android library adds automatically, which only Memory Vault itself can use.</p>
+  <p>It does not ask for access to your location, contacts, camera, microphone or files, and it has no access to your photo library. When you add a photo to a memory, you choose that photo yourself, and Memory Vault keeps its own copy of only that photo in its private storage.</p>
 
-  <h2>Device backups</h2>
-  <p>Memory Vault does not take part in Android's automatic backup to your Google account, so your entries are not copied off your phone.</p>
+  <h2>Passphrase lock</h2>
+  <p>You can turn on an optional passphrase lock. When it's on, your vault, its backup copy and your photos are encrypted on the phone with a key made from your passphrase.</p>
+
+  <h2>Backup files you export</h2>
+  <p>You can export a backup file whenever you choose. It is sealed with a password unless you choose a readable copy, and it goes only where you save it. Once it's saved outside the app, where it goes next is up to you, so keep it somewhere you trust.</p>
+
+  <h2>Android backups</h2>
+  <p>Memory Vault turns off Android's automatic cloud backup and its device-to-device transfer, so Android does not copy your vault to your Google account or to a new phone. The only backups are the files you export yourself.</p>
 
   <h2>Bug reports you choose to send</h2>
-  <p>If something goes wrong, the "Something's off" option under You writes a report that you can email to me. The report is made on your phone and is only sent if you choose to send it, from your own email app. It never includes your memories or dreams. It may include basic technical details such as the app version, Android version and device model.</p>
-  <p>I use these reports, and the email address you send them from, only to fix problems and reply to you. I do not share them with anyone, and I delete them once the issue is resolved or whenever you ask.</p>
+  <p>If something goes wrong, tap You, then Something's off. Memory Vault writes a report and opens your own email app with it addressed to me. You can read it first, and nothing is sent unless you press send yourself.</p>
+  <p>The report contains</p>
+  <ul>
+    <li>the app version, Android version, phone model and WebView version</li>
+    <li>your screen size</li>
+    <li>how many memories, threads, dreams and photos you have</li>
+    <li>whether the passphrase lock is on</li>
+    <li>counts of slow frames and errors, with any quoted text removed</li>
+    <li>if you choose to include it, a "ghost picture" of the screen that shows only shapes, such as dots, outlines and grey bars, with no words</li>
+  </ul>
+  <p>It never includes the words of your memories or dreams, or your photos. When you send it, I also receive your email address, as with any email.</p>
+  <p>I use these reports and your email address only to fix problems and reply to you. I do not share them with anyone, and I delete them once the issue is resolved or whenever you ask.</p>
 
   <h2>Keeping and deleting your data</h2>
-  <p>Your entries stay on your device until you delete them. You can delete an entry inside the app, or remove everything at once by uninstalling Memory Vault or by going to Settings, Apps, Memory Vault, Storage and tapping Clear storage.</p>
-  <p>Because I hold none of your journal data, there is nothing for me to delete on my side, apart from any bug report emails you have sent me.</p>
+  <p>Your data stays on your phone until you remove it. Uninstalling Memory Vault, or going to Settings, Apps, Memory Vault, Storage and tapping Clear storage, deletes everything in the app, including your photos and the backup copy. Backup files you exported stay wherever you saved them, so delete those there.</p>
+  <p>I hold none of your journal data. If you have sent me bug reports, email me and I will delete them.</p>
 
   <h2>Security</h2>
-  <p>Your entries are kept in the app's private storage, which Android keeps separate from other apps. Locking your phone with a PIN, pattern, password or fingerprint is the best way to protect them. Memory Vault itself sends nothing over the internet, so your entries are never exposed in transit.</p>
+  <p>Android keeps the app's private storage separate from other apps, and the optional passphrase lock adds encryption on top. Locking your phone with a PIN, pattern, password or fingerprint helps protect it further. Memory Vault itself sends nothing over the internet, so your entries are never exposed in transit.</p>
 
   <h2>Children</h2>
   <p>Memory Vault is not directed at children under 13. It collects no personal information from anyone, including children.</p>
